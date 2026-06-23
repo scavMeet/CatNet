@@ -8,7 +8,7 @@ while true; do
     echo "commands: open <port>, close <port>"
     read -p "input command: " action port
     if [[ -n "$port" && ! "$port" =~ ^[0-9]+$ ]]; then
-        echo "Ошибка: $port не является числом!"
+        echo "ERROR: $port is not number!"
         sleep 2
         continue
     fi
@@ -30,4 +30,3 @@ while true; do
     esac
     sleep 1
 done
-
